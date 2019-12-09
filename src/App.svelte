@@ -1,10 +1,18 @@
 <script>
 	export let name;
+	export let count = 0;
+
+	function handleClick() {
+		count += 1;
+	}
+
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
+	<h2>Counter {count}</h2>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<button on:click={ handleClick }>Add 1</button>
 </main>
 
 <style>
