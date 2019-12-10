@@ -16,6 +16,8 @@
 	<h2>Counter doubled { doubled }</h2>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 	<button on:click={ handleClick }>Add 1</button>
+	<input bind:value={ name }>
+	<p>Hello { name }</p>
 </main>
 
 <style>
